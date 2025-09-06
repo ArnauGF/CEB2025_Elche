@@ -26,6 +26,8 @@ When you click the **Render** button a presentation will be generated that inclu
 
 ## Formulas
 
+Nice formulas with colors: 
+
 $$\require{color}
 {\scriptsize{
 \begin{cases}
