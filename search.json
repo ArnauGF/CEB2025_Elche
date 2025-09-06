@@ -1,0 +1,30 @@
+[
+  {
+    "objectID": "index.html#quarto",
+    "href": "index.html#quarto",
+    "title": "Elche2025",
+    "section": "Quarto",
+    "text": "Quarto\nQuarto enables you to weave together content and executable code into a finished presentation. To learn more about Quarto presentations see https://quarto.org/docs/presentations/."
+  },
+  {
+    "objectID": "index.html#bullets",
+    "href": "index.html#bullets",
+    "title": "Elche2025",
+    "section": "Bullets",
+    "text": "Bullets\nWhen you click the Render button a document will be generated that includes:\n\nContent authored with markdown\nOutput from executable code"
+  },
+  {
+    "objectID": "index.html#code",
+    "href": "index.html#code",
+    "title": "Elche2025",
+    "section": "Code",
+    "text": "Code\nWhen you click the Render button a presentation will be generated that includes both content and the output of embedded code. You can embed code like this:\n\n\n[1] 2"
+  },
+  {
+    "objectID": "index.html#formulas",
+    "href": "index.html#formulas",
+    "title": "Elche2025",
+    "section": "Formulas",
+    "text": "Formulas\nNice formulas with colors:\n\\[\\require{color}\n{\\scriptsize{\n\\begin{cases}\n\\text{MELD}_i(t)&= \\colorbox{#03858C}{$\\color{#F5ECCF}\\boldsymbol x_{1i}^\\top(t)\\boldsymbol\\beta_1 + \\boldsymbol z_{1i}^\\top(t)\\boldsymbol b_{1i}$} + \\varepsilon_1(t) \\\\\n\\text{TBS}_i(t)&= \\colorbox{#03858C}{$\\color{#F5ECCF}\\boldsymbol x_{2i}^\\top(t)\\boldsymbol\\beta_2 + \\boldsymbol z_{2i}^\\top(t)\\boldsymbol b_{2i}$} + \\varepsilon_2(t) \\\\\n\\text{AFP}_i(t)&= \\colorbox{#03858C}{$\\color{#F5ECCF}\\boldsymbol x_{3i}^\\top(t)\\boldsymbol\\beta_3 + \\boldsymbol z_{3i}^\\top(t)\\boldsymbol b_{3i}$} + \\varepsilon_3(t) \\\\\n\\log h_i(t) &= \\log h_0(t) + w_{Ri}^\\top(t)\\boldsymbol\\gamma_R\\, + \\color{transparent} \\boxed{\\color{#03858C}\\mathbf{1}\\{t&gt;T_i\\}\\left(\\gamma_\\text{T}+w_{Di}^\\top(t)\\boldsymbol\\gamma_D\\right)} \\,\\color{#03858C}+ \\\\\n\\color{transparent}\\log h_i(t) &\\color{#03858C}+\\, \\color{#03858C}\\boxed{\\color{#03858C}\\tfrac{\\delta}{\\delta t^\\ast}\\colorbox{#03858C}{$\\color{#F5ECCF}\\eta_{1i}(t^\\ast)$}\\,}\\color{#03858C}\\alpha_{1,1} + \\color{#03858C}\\boxed{\\color{#03858C}\\tfrac{\\delta}{\\delta t^\\ast}\\colorbox{#03858C}{$\\color{#F5ECCF}\\eta_{2i}(t^\\ast)$}\\,}\\color{#03858C}\\alpha_{2,1} + \\color{#03858C}\\boxed{\\color{#03858C}\\tfrac{\\delta}{\\delta t^\\ast}\\colorbox{#03858C}{$\\color{#F5ECCF}\\eta_{3i}(t^\\ast)$}\\,}\\color{#03858C}\\alpha_{3,1} + \\\\\n\\color{transparent}\\log h_i(t) &\\color{#03858C}+\\, \\color{transparent}\\boxed{\\color{#03858C}\\tfrac{1}{t^\\ast}{\\textstyle\\int\\,}\\colorbox{#03858C}{$\\color{#F5ECCF}\\eta_{1i}(t^\\ast)$}ds}\\color{#03858C}\\,\\alpha_{1,2} + \\color{transparent}\\boxed{\\color{#03858C}\\tfrac{1}{t^\\ast}{\\textstyle\\int\\,}\\colorbox{#03858C}{$\\color{#F5ECCF}\\eta_{2i}(t^\\ast)$}\\mbox{d}s}\\color{#03858C}\\,\\alpha_{2,2} + \\color{transparent}\\boxed{\\color{#03858C}\\tfrac{1}{t^\\ast}{\\textstyle\\int\\,}\\colorbox{#03858C}{$\\color{#F5ECCF}\\eta_{3i}(t^\\ast)$}\\mbox{d}s}\\color{#03858C}\\,\\alpha_{3,2}\n\\end{cases}\\\\\n}}\\]"
+  }
+]
