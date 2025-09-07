@@ -3,6 +3,7 @@ title: " "
 format:
   revealjs:
     theme: simple
+    css: custom.css
     slide-number: true
     controls: false
     menu: false
@@ -50,13 +51,32 @@ format:
 
 ## The PBC dataset
 
-<div style="display: flex; justify-content: center; align-items: center;">
 
-<img src="images/KM_PBC.png" style="width:60%;" class="fragment" data-fragment-index="1">
+<div class="image-grid">
+  
+  <img src="images/KM_PBC.png" style="width:290px;" class="fragment fade-in">
+  
+  <img src="images/NA_PBC.png" style="width:290px;" class="fragment fade-in">
 
-<img src="images/NA_PBC.png" style="width:30%; margin-left:20px;" class="fragment" data-fragment-index="2">
+  <img src="images/y1_PBC.png" style="width:290px;" class="fragment fade-in">
+  
+  <img src="images/y2_PBC.png" style="width:290px;" class="fragment fade-in">
+  
+  <img src="images/y3_PBC.png" style="width:290px;" class="fragment fade-in">
+  
+  <img src="images/y4_PBC.png" style="width:290px;" class="fragment fade-in">
 
 </div>
+
+## Multivariate data: notation
+
+-   $\require{color}\textcolor{teal}{T_1^*,\dots, T_n^*}$ true time until event
+-   $\require{color}\textcolor{teal}{C_1,\dots, C_n}$ true time until event
+-   $\require{color}\textcolor{teal}{T_i=\min(T_i^*, C_i)}$ observed times, $i=1,\dotsc,n$
+-   $\require{color}\textcolor{teal}{\delta_i=\mathbf{1}\{T_i^*\leq C_i\}}$ censoring indicator, $i=1,\dotsc,n$
+-   Longitudinal data $\require{color}\textcolor{teal}{\{\boldsymbol{y}_{li}; i=1,\dots,n, l=1,\dots,L\}}$
+    -   $\require{color}\textcolor{teal}{y_{li}(t_{ij})}$ value of the longitudinal outcome at $t_{ij}$, $j=1,\dots,n_{li}$
+-   $\require{color}\textcolor{teal}{w_i}$ vector of baseline covarites
 
 ## Code
 
