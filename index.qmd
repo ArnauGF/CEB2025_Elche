@@ -39,3 +39,9 @@ $$\require{color}
 \color{transparent}\log h_i(t) &\color{#03858C}+\, \color{transparent}\boxed{\color{#03858C}\tfrac{1}{t^\ast}{\textstyle\int\,}\colorbox{#03858C}{$\color{#F5ECCF}\eta_{1i}(t^\ast)$}ds}\color{#03858C}\,\alpha_{1,2} + \color{transparent}\boxed{\color{#03858C}\tfrac{1}{t^\ast}{\textstyle\int\,}\colorbox{#03858C}{$\color{#F5ECCF}\eta_{2i}(t^\ast)$}\mbox{d}s}\color{#03858C}\,\alpha_{2,2} + \color{transparent}\boxed{\color{#03858C}\tfrac{1}{t^\ast}{\textstyle\int\,}\colorbox{#03858C}{$\color{#F5ECCF}\eta_{3i}(t^\ast)$}\mbox{d}s}\color{#03858C}\,\alpha_{3,2}
 \end{cases}\\
 }}$$
+
+## Images
+
+Let us display a nice animated figure:
+
+![](images/JMBayes2-logo-no-background.gif){width="30%"}
