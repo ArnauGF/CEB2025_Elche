@@ -4,21 +4,14 @@
     "href": "index.html#section",
     "title": "",
     "section": "",
-    "text": "Optimizing dynamic predictions from joint models for multivariate longitudinal and time-to-event data via super learning approach \n\n CEB2026 \n\n Arnau Garcia-Fernández (main author) Guadalupe Gómez-Melis Dimitris Rizopoulos \n\n September 17, 2025 — Elche"
+    "text": "Optimizing dynamic predictions from joint models for multivariate longitudinal and time-to-event data via super learning approach\n\nCEB2026\n\nArnau Garcia-Fernández, Guadalupe Gómez-Melis, Dimitris Rizopoulos\n\nSeptember 17, 2025 — Elche"
   },
   {
-    "objectID": "index.html#quarto",
-    "href": "index.html#quarto",
+    "objectID": "index.html#context-and-motivation",
+    "href": "index.html#context-and-motivation",
     "title": "",
-    "section": "Quarto",
-    "text": "Quarto\nQuarto enables you to weave together content and executable code into a finished presentation. To learn more about Quarto presentations see https://quarto.org/docs/presentations/."
-  },
-  {
-    "objectID": "index.html#bullets",
-    "href": "index.html#bullets",
-    "title": "",
-    "section": "Bullets",
-    "text": "Bullets\nWhen you click the Render button a document will be generated that includes:\n\nContent authored with markdown\nOutput from executable code"
+    "section": "Context and motivation",
+    "text": "Context and motivation\n\nTime-to-event and longitudinal data are fundamental in health-related data\nClinical studies usually collect the time until the occurrence of specific events and repeated measurements of biomarkers over time\nA significant feature is its temporal dimension, which enables the generation of dynamic predictions\nThese predictions have demonstrated utility in precision medicine"
   },
   {
     "objectID": "index.html#code",
