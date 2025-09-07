@@ -30,6 +30,7 @@
     }
   </style>
   <link rel="stylesheet" href="site_libs/revealjs/dist/theme/quarto.css">
+  <link rel="stylesheet" href="custom.css">
   <link href="site_libs/revealjs/plugin/quarto-line-highlight/line-highlight.css" rel="stylesheet">
   <link href="site_libs/revealjs/plugin/reveal-menu/menu.css" rel="stylesheet">
   <link href="site_libs/revealjs/plugin/reveal-menu/quarto-menu.css" rel="stylesheet">
@@ -365,10 +366,28 @@
 </section>
 <section id="the-pbc-dataset-1" class="slide level2">
 <h2>The PBC dataset</h2>
-<div style="display: flex; justify-content: center; align-items: center;">
-<p><img src="images/KM_PBC.png" style="width:60%;" class="fragment" data-fragment-index="1"></p>
-<p><img src="images/NA_PBC.png" style="width:30%; margin-left:20px;" class="fragment" data-fragment-index="2"></p>
+<div class="image-grid">
+<p><img src="images/KM_PBC.png" style="width:290px;" class="fragment fade-in"></p>
+<p><img src="images/NA_PBC.png" style="width:290px;" class="fragment fade-in"></p>
+<p><img src="images/y1_PBC.png" style="width:290px;" class="fragment fade-in"></p>
+<p><img src="images/y2_PBC.png" style="width:290px;" class="fragment fade-in"></p>
+<p><img src="images/y3_PBC.png" style="width:290px;" class="fragment fade-in"></p>
+<p><img src="images/y4_PBC.png" style="width:290px;" class="fragment fade-in"></p>
 </div>
+</section>
+<section id="multivariate-data-notation" class="slide level2">
+<h2>Multivariate data: notation</h2>
+<ul>
+<li><span class="math inline">\(\require{color}\textcolor{teal}{T_1^*,\dots, T_n^*}\)</span> true time until event</li>
+<li><span class="math inline">\(\require{color}\textcolor{teal}{C_1,\dots, C_n}\)</span> true time until event</li>
+<li><span class="math inline">\(\require{color}\textcolor{teal}{T_i=\min(T_i^*, C_i)}\)</span> observed times, <span class="math inline">\(i=1,\dotsc,n\)</span></li>
+<li><span class="math inline">\(\require{color}\textcolor{teal}{\delta_i=\mathbf{1}\{T_i^*\leq C_i\}}\)</span> censoring indicator, <span class="math inline">\(i=1,\dotsc,n\)</span></li>
+<li>Longitudinal data <span class="math inline">\(\require{color}\textcolor{teal}{\{\boldsymbol{y}_{li}; i=1,\dots,n, l=1,\dots,L\}}\)</span>
+<ul>
+<li><span class="math inline">\(\require{color}\textcolor{teal}{y_{li}(t_{ij})}\)</span> value of the longitudinal outcome at <span class="math inline">\(t_{ij}\)</span>, <span class="math inline">\(j=1,\dots,n_{li}\)</span></li>
+</ul></li>
+<li><span class="math inline">\(\require{color}\textcolor{teal}{w_i}\)</span> vector of baseline covarites</li>
+</ul>
 </section>
 <section id="code" class="slide level2">
 <h2>Code</h2>
