@@ -1,9 +1,47 @@
 ---
-title: "Elche2025"
-author: "Arnau Garcia"
-format: revealjs
-editor: visual
+title: " "
+format:
+  revealjs:
+    theme: simple
+    slide-number: true
+    controls: false
 ---
+
+##  <!-- This creates a slide without a visible heading -->
+
+<div style="text-align: center;">
+
+<span style="font-size: 100%; font-weight: bold;">
+Optimizing dynamic predictions from joint models for multivariate longitudinal and time-to-event data via super learning approach
+</span>
+
+<br><br>
+
+<span style="font-size: 100%; font-weight: bold;">
+CEB2026
+</span>
+
+<br><br>
+
+<span style="font-size: 80%;">
+Arnau Garcia-Fernández (main author)<br>
+Guadalupe Gómez-Melis<br>
+Dimitris Rizopoulos
+</span>
+
+<br><br>
+
+<span style="font-size: 50%;">
+September 17, 2025 — Elche
+</span>
+
+<br><br>
+
+<img src="images/Erasmus.png" style="height:70px; margin: 0 20px;">
+<img src="images/grbio.png" style="height:70px; margin: 0 20px;">
+<img src="images/upc.png" style="height:70px; margin: 0 20px;">
+
+</div>
 
 ## Quarto
 
@@ -45,3 +83,4 @@ $$\require{color}
 Let us display a nice animated figure:
 
 ![](images/JMBayes2-logo-no-background.gif){width="30%"}
+
