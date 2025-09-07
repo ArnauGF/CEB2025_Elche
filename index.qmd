@@ -7,52 +7,34 @@ format:
     controls: false
 ---
 
-##  <!-- This creates a slide without a visible heading -->
+## <!-- This creates a slide without a visible heading -->
 
-<div style="text-align: center;">
+::: {style="text-align: center;"}
+[Optimizing dynamic predictions from joint models for multivariate longitudinal and time-to-event data via super learning approach]{style="font-size: 100%; font-weight: bold;"}
 
-<span style="font-size: 100%; font-weight: bold;">
-Optimizing dynamic predictions from joint models for multivariate longitudinal and time-to-event data via super learning approach
-</span>
+<br>
 
-<br><br>
+[CEB2026]{style="font-size: 100%; font-weight: bold;"}
 
-<span style="font-size: 100%; font-weight: bold;">
-CEB2026
-</span>
+<br>
 
-<br><br>
+[Arnau Garcia-Fernández, Guadalupe Gómez-Melis, Dimitris Rizopoulos]{style="font-size: 80%;"}
 
-<span style="font-size: 80%;">
-Arnau Garcia-Fernández (main author)<br>
-Guadalupe Gómez-Melis<br>
-Dimitris Rizopoulos
-</span>
+<br>
 
-<br><br>
+[September 17, 2025 --- Elche]{style="font-size: 50%;"}
 
-<span style="font-size: 50%;">
-September 17, 2025 — Elche
-</span>
+<br>
 
-<br><br>
+<img src="images/Erasmus.png" style="height:70px; margin: 0 20px;"/> <img src="images/grbio.png" style="height:70px; margin: 0 20px;"/> <img src="images/upc.png" style="height:70px; margin: 0 20px;"/>
+:::
 
-<img src="images/Erasmus.png" style="height:70px; margin: 0 20px;">
-<img src="images/grbio.png" style="height:70px; margin: 0 20px;">
-<img src="images/upc.png" style="height:70px; margin: 0 20px;">
+## Context and motivation
 
-</div>
-
-## Quarto
-
-Quarto enables you to weave together content and executable code into a finished presentation. To learn more about Quarto presentations see <https://quarto.org/docs/presentations/>.
-
-## Bullets
-
-When you click the **Render** button a document will be generated that includes:
-
--   Content authored with markdown
--   Output from executable code
+-   [Time-to-event and longitudinal data]{style="color:green;"} are fundamental in health-related data
+-   Clinical studies usually collect the [time until the occurrence]{style="color:green;"} of specific events and [repeated measurements of biomarkers]{style="color:green;"} over time
+-   A significant feature is its [temporal]{style="color:green;"} dimension, which enables the generation of [dynamic predictions]{style="color:green;"}
+-   These predictions have demonstrated utility in [precision medicine]{style="color:green;"}
 
 ## Code
 
@@ -64,7 +46,7 @@ When you click the **Render** button a presentation will be generated that inclu
 
 ## Formulas
 
-Nice formulas with colors and backgrounds: 
+Nice formulas with colors and backgrounds:
 
 $$\require{color}
 {\scriptsize{
@@ -83,4 +65,3 @@ $$\require{color}
 Let us display a nice animated figure:
 
 ![](images/JMBayes2-logo-no-background.gif){width="30%"}
-
