@@ -5,6 +5,7 @@ format:
     theme: simple
     slide-number: true
     controls: false
+    menu: false
 ---
 
 ## <!-- This creates a slide without a visible heading -->
@@ -32,9 +33,30 @@ format:
 ## Context and motivation
 
 -   [Time-to-event and longitudinal data]{style="color:green;"} are fundamental in health-related data
--   Clinical studies usually collect the [time until the occurrence]{style="color:green;"} of specific events and [repeated measurements of biomarkers]{style="color:green;"} over time
--   A significant feature is its [temporal]{style="color:green;"} dimension, which enables the generation of [dynamic predictions]{style="color:green;"}
+-   A significant feature is its [temporal]{style="color:green;"} dimension, allowing for [dynamic predictions]{style="color:green;"}
 -   These predictions have demonstrated utility in [precision medicine]{style="color:green;"}
+
+## Context and motivation
+
+-   [Joint models (JMs)]{style="color:green;"} provide a powerful framework for analyzing time-to-event and longitudinal data together
+-   JMs allow [dynamic predictions]{style="color:green;"}
+-   Applying JMs to multivariate longitudinal data poses [challenges]{style="color:red;"} due to the [increased number of random effects and parameters]{style="color:red;"}
+
+## The PBC dataset
+
+-   The [PBC dataset]{style="color:green;"} is a widely used, [freely available]{style="color:green;"}, dataset that will be used to apply the methods
+-   By using the PBC dataset, all methods are [fully reproducible]{style="color:green;"} 
+-   Primary biliary cirrhosis (PBC) is a rare disease that could eventually lead to liver cirrhosis
+
+## The PBC dataset
+
+<div style="display: flex; justify-content: center; align-items: center;">
+
+<img src="images/KM_PBC.png" style="width:60%;" class="fragment" data-fragment-index="1">
+
+<img src="images/NA_PBC.png" style="width:30%; margin-left:20px;" class="fragment" data-fragment-index="2">
+
+</div>
 
 ## Code
 
