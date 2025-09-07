@@ -366,12 +366,14 @@
 <section id="the-pbc-dataset-1" class="slide level2">
 <h2>The PBC dataset</h2>
 <div class="image-grid">
-<p><img src="images/KM_PBC.png" style="width:290px;" class="fragment fade-in"></p>
-<p><img src="images/NA_PBC.png" style="width:290px;" class="fragment fade-in"></p>
-<p><img src="images/y1_PBC.png" style="width:290px;" class="fragment fade-in"></p>
-<p><img src="images/y2_PBC.png" style="width:290px;" class="fragment fade-in"></p>
-<p><img src="images/y3_PBC.png" style="width:290px;" class="fragment fade-in"></p>
-<p><img src="images/y4_PBC.png" style="width:290px;" class="fragment fade-in"></p>
+<p><img src="images/KM_PBC.png" style="width:300px;" class="fragment fade-in"></p>
+<p><img src="images/NA_PBC.png" style="width:300px;" class="fragment fade-in"></p>
+<p><img src="images/y1_PBC.png" style="width:300px;" class="fragment fade-in"></p>
+<p><img src="images/y2_PBC.png" style="width:300px;" class="fragment fade-in"></p>
+<p><img src="images/y3_PBC.png" style="width:300px;" class="fragment fade-in"></p>
+<p><img src="images/y4_PBC.png" style="width:300px;" class="fragment fade-in"></p>
+<p><!-- SVG rectangle for first two images (green) --> <svg class="highlight-line fragment" style="top:0; left:0; width: 702px; height: 351px;"> <line x1="1" y1="1" x2="701" y2="1" stroke="green" stroke-width="4"></line> <line x1="1" y1="350" x2="701" y2="350" stroke="green" stroke-width="4"></line> <line x1="1" y1="0" x2="1" y2="350" stroke="green" stroke-width="4"></line> <line x1="701" y1="1" x2="701" y2="350" stroke="green" stroke-width="4"></line> </svg></p>
+<p><!-- SVG rectangle for last four images (red) --> <svg class="highlight-line fragment" style="position:absolute; top:0; left:0; width: 1100px; height: 720px;" viewbox="0 0 1061 719"> <line x1="0" y1="360" x2="701" y2="360" stroke="red" stroke-width="4"></line> <line x1="701" y1="360" x2="701" y2="1" stroke="red" stroke-width="4"></line> <line x1="701" y1="1" x2="1020" y2="1" stroke="red" stroke-width="4"></line> <line x1="1020" y1="1" x2="1020" y2="701" stroke="red" stroke-width="4"></line> <line x1="1020" y1="701" x2="0" y2="701" stroke="red" stroke-width="4"></line> <line x1="0" y1="719" x2="0" y2="360" stroke="red" stroke-width="4"></line> </svg></p>
 </div>
 </section>
 <section id="multivariate-data-notation" class="slide level2">
@@ -383,9 +385,9 @@
 <li><span class="math inline">\(\require{color}\textcolor{teal}{\delta_i=\mathbf{1}\{T_i^*\leq C_i\}}\)</span> censoring indicator, <span class="math inline">\(i=1,\dotsc,n\)</span></li>
 <li>Longitudinal data <span class="math inline">\(\require{color}\textcolor{teal}{\{\boldsymbol{y}_{li}; i=1,\dots,n, l=1,\dots,L\}}\)</span>
 <ul>
-<li><span class="math inline">\(\require{color}\textcolor{teal}{y_{li}(t_{ij})}\)</span> is the value of the longitudinal outcome at <span class="math inline">\(t_{ij}\)</span>, <span class="math inline">\(j=1,\dots,n_{li}\)</span></li>
+<li><span class="math inline">\(\require{color}\textcolor{teal}{y_{li}(t_{ij})}\)</span> value of the longitudinal outcome at <span class="math inline">\(t_{ij}\)</span>, <span class="math inline">\(j=1,\dots,n_{li}\)</span></li>
 </ul></li>
-<li><span class="math inline">\(\require{color}\textcolor{teal}{w_i}\)</span> is the vector of baseline covarites</li>
+<li><span class="math inline">\(\require{color}\textcolor{teal}{w_i}\)</span> vector of baseline covarites</li>
 </ul>
 </section>
 <section id="code" class="slide level2">
