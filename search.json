@@ -46,7 +46,21 @@
     "href": "index.html#multivariate-longitudinal-data",
     "title": "",
     "section": "Multivariate longitudinal data",
-    "text": "Multivariate longitudinal data\n\n\n\n\n\n\n\n\\[\\cdots\\]\n\n\n\n\n\n\\[\\begin{split}\n  (T_1 &,\\delta_1) \\\\\n  &w_1\n  \\end{split}\\]\n\n\n\\[\\begin{split}\n  (T_2 &,\\delta_2) \\\\\n  &w_2\n  \\end{split}\\]\n\n\n\\[\\begin{split}\n  (T_n &,\\delta_n) \\\\\n  &w_n\n  \\end{split}\\]"
+    "text": "Multivariate longitudinal data\n\n\n\n\n\n\n\n\\[\\huge{\\cdots}\\]\n\n\n\n\n\n\n\n\n\\[\\begin{split}\n  (T_1 &,\\delta_1) \\\\\n  &w_1\n  \\end{split}\\]\n\n\n\n\n\n\\[\\begin{split}\n  (T_2 &,\\delta_2) \\\\\n  &w_2\n  \\end{split}\\]\n\n\n\n\n\n\\[\\begin{split}\n  (T_n &,\\delta_n) \\\\\n  &w_n\n  \\end{split}\\]"
+  },
+  {
+    "objectID": "index.html#multivariate-longitudinal-data-1",
+    "href": "index.html#multivariate-longitudinal-data-1",
+    "title": "",
+    "section": "Multivariate longitudinal data",
+    "text": "Multivariate longitudinal data\n\n\n\n\n\n\n\n\\[\\huge{\\cdots}\\]\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\\[\\tiny{\\begin{split}\n  (1.09 , & 1) \\\\\n  (\\text{female}, & \\text{ D-peni} , 57)\n  \\end{split}}\\]\n\n\n\\[\\tiny{\\begin{split}\n  (14.15 , & 0) \\\\\n  (\\text{female}, & \\text{ D-peni} , 56)\n  \\end{split}}\\]\n\n\n\\[\\tiny{\\begin{split}\n  (3.98 , & 0) \\\\\n  (\\text{female}, & \\text{ placebo} , 33)\n  \\end{split}}\\]"
+  },
+  {
+    "objectID": "index.html#multivariate-longitudinal-data-2",
+    "href": "index.html#multivariate-longitudinal-data-2",
+    "title": "",
+    "section": "Multivariate longitudinal data",
+    "text": "Multivariate longitudinal data\n\n\n\n\n\n\n\n\\[\\huge{\\cdots}\\]\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\\[\\tiny{\\begin{split}\n  (T_1 &,\\delta_1) \\\\\n  &w_1 \\\\\n  (y_{11}(t_{ij}), & \\dots, y_{L1}(t_{ij}))\n  \\end{split}}\\]\n\n\n\\[\\tiny{\\begin{split}\n  (T_2 &,\\delta_2) \\\\\n  &w_2 \\\\\n  (y_{12}(t_{ij}), & \\dots, y_{L2}(t_{ij}))\n  \\end{split}}\\]\n\n\n\\[\\tiny{\\begin{split}\n  (T_n &,\\delta_n) \\\\\n  &w_n \\\\\n  (y_{1n}(t_{ij}), & \\dots, y_{Ln}(t_{ij}))\n  \\end{split}}\\]"
   },
   {
     "objectID": "index.html#code",
