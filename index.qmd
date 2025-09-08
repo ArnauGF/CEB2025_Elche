@@ -110,20 +110,27 @@ format:
   <img src="images/men2.png" style="width:42%;" class="fragment fade-in">
 </div>
 
-<div style="position:absolute; top:25%; left:55%; font-size:30px;" class="fragment fade-in">
-  $$\cdots$$
+<div style="position:absolute; top:30%; left:55%; font-size:30px;" class="fragment fade-in">
+  $$\huge{\cdots}$$
 </div>
 
 <div style="position:absolute; top:15%; left:80%; font-size:30px;">
   <img src="images/men3.png" style="width:50%;" class="fragment fade-in">
 </div>
 
+<div style="position:absolute; top:55%; left:13%; font-size:30px;">
+  <img src="images/arrow.png" style="width:18%;" class="fragment fade-in">
+</div>
 
 <div style="position:absolute; top:80%; left:9%; font-size:30px;" class="fragment fade-in">
   $$\begin{split}
   (T_1 &,\delta_1) \\
   &w_1
   \end{split}$$
+</div>
+
+<div style="position:absolute; top:55%; left:33%; font-size:30px;">
+  <img src="images/arrow.png" style="width:18%;" class="fragment fade-in">
 </div>
 
 <div style="position:absolute; top:80%; left:29%; font-size:30px;" class="fragment fade-in">
@@ -133,11 +140,121 @@ format:
   \end{split}$$
 </div>
 
+<div style="position:absolute; top:55%; left:84%; font-size:30px;">
+  <img src="images/arrow.png" style="width:18%;" class="fragment fade-in">
+</div>
+
 <div style="position:absolute; top:80%; left:79%; font-size:30px;" class="fragment fade-in">
   $$\begin{split}
   (T_n &,\delta_n) \\
   &w_n
   \end{split}$$
+</div>
+
+
+## Multivariate longitudinal data 
+
+<div style="position:absolute; top:15%; left:10%; font-size:30px;">
+  <img src="images/men1.png" style="width:50%;">
+</div>
+
+<div style="position:absolute; top:15%; left:30%; font-size:30px;">
+  <img src="images/men2.png" style="width:42%;">
+</div>
+
+<div style="position:absolute; top:30%; left:55%; font-size:30px;">
+  $$\huge{\cdots}$$
+</div>
+
+<div style="position:absolute; top:15%; left:80%; font-size:30px;">
+  <img src="images/men3.png" style="width:50%;">
+</div>
+
+<div style="position:absolute; top:55%; left:13%; font-size:30px;">
+  <img src="images/arrow.png" style="width:18%;">
+</div>
+
+<div style="position:absolute; top:55%; left:33%; font-size:30px;">
+  <img src="images/arrow.png" style="width:18%;">
+</div>
+
+<div style="position:absolute; top:55%; left:84%; font-size:30px;">
+  <img src="images/arrow.png" style="width:18%;">
+</div>
+
+<div style="position:absolute; top:80%; left:7%; font-size:30px;" class="fragment fade-in">
+  $$\tiny{\begin{split}
+  (1.09 , & 1) \\
+  (\text{female}, & \text{ D-peni} , 57)
+  \end{split}}$$
+</div>
+
+<div style="position:absolute; top:80%; left:29%; font-size:30px;" class="fragment fade-in">
+  $$\tiny{\begin{split}
+  (14.15 , & 0) \\
+  (\text{female}, & \text{ D-peni} , 56)
+  \end{split}}$$
+</div>
+
+<div style="position:absolute; top:80%; left:79%; font-size:30px;" class="fragment fade-in">
+  $$\tiny{\begin{split}
+  (3.98 , & 0) \\
+  (\text{female}, & \text{ placebo} , 33)
+  \end{split}}$$
+</div>
+
+## Multivariate longitudinal data 
+
+<div style="position:absolute; top:15%; left:10%; font-size:30px;">
+  <img src="images/men1.png" style="width:50%;">
+</div>
+
+<div style="position:absolute; top:15%; left:30%; font-size:30px;">
+  <img src="images/men2.png" style="width:42%;">
+</div>
+
+<div style="position:absolute; top:30%; left:55%; font-size:30px;">
+  $$\huge{\cdots}$$
+</div>
+
+<div style="position:absolute; top:15%; left:80%; font-size:30px;">
+  <img src="images/men3.png" style="width:50%;">
+</div>
+
+<div style="position:absolute; top:55%; left:13%; font-size:30px;">
+  <img src="images/arrow.png" style="width:18%;">
+</div>
+
+<div style="position:absolute; top:55%; left:33%; font-size:30px;">
+  <img src="images/arrow.png" style="width:18%;">
+</div>
+
+<div style="position:absolute; top:55%; left:84%; font-size:30px;">
+  <img src="images/arrow.png" style="width:18%;">
+</div>
+
+<div style="position:absolute; top:80%; left:7%; font-size:30px;" class="fragment fade-in">
+  $$\tiny{\begin{split}
+  (T_1 &,\delta_1) \\
+  &w_1 \\
+  (y_{11}(t_{ij}), & \dots, y_{L1}(t_{ij}))
+  \end{split}}$$
+</div>
+
+<div style="position:absolute; top:80%; left:27%; font-size:30px;" class="fragment fade-in">
+  $$\tiny{\begin{split}
+  (T_2 &,\delta_2) \\
+  &w_2 \\
+  (y_{12}(t_{ij}), & \dots, y_{L2}(t_{ij}))
+  \end{split}}$$
+</div>
+
+<div style="position:absolute; top:80%; left:79%; font-size:30px;" class="fragment fade-in">
+  $$\tiny{\begin{split}
+  (T_n &,\delta_n) \\
+  &w_n \\
+  (y_{1n}(t_{ij}), & \dots, y_{Ln}(t_{ij}))
+  \end{split}}$$
 </div>
 
 ## Code
