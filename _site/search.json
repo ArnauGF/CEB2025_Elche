@@ -35,11 +35,18 @@
     "text": "The PBC dataset"
   },
   {
-    "objectID": "index.html#multivariate-data-notation",
-    "href": "index.html#multivariate-data-notation",
+    "objectID": "index.html#notation",
+    "href": "index.html#notation",
     "title": "",
-    "section": "Multivariate data: notation",
-    "text": "Multivariate data: notation\n\n\\(\\require{color}\\textcolor{teal}{T_1^*,\\dots, T_n^*}\\) true time until event\n\\(\\require{color}\\textcolor{teal}{C_1,\\dots, C_n}\\) true time until event\n\\(\\require{color}\\textcolor{teal}{T_i=\\min(T_i^*, C_i)}\\) observed times, \\(i=1,\\dotsc,n\\)\n\\(\\require{color}\\textcolor{teal}{\\delta_i=\\mathbf{1}\\{T_i^*\\leq C_i\\}}\\) censoring indicator, \\(i=1,\\dotsc,n\\)\nLongitudinal data \\(\\require{color}\\textcolor{teal}{\\{\\boldsymbol{y}_{li}; i=1,\\dots,n, l=1,\\dots,L\\}}\\)\n\n\\(\\require{color}\\textcolor{teal}{y_{li}(t_{ij})}\\) value of the longitudinal outcome at \\(t_{ij}\\), \\(j=1,\\dots,n_{li}\\)\n\n\\(\\require{color}\\textcolor{teal}{w_i}\\) vector of baseline covarites"
+    "section": "Notation",
+    "text": "Notation\n\n\\(\\require{color}\\textcolor{teal}{T_1^*,\\dots, T_n^*}\\) true time until event\n\\(\\require{color}\\textcolor{teal}{C_1,\\dots, C_n}\\) true time until event\n\\(\\require{color}\\textcolor{teal}{T_i=\\min(T_i^*, C_i)}\\) observed times, \\(i=1,\\dotsc,n\\)\n\\(\\require{color}\\textcolor{teal}{\\delta_i=\\mathbf{1}\\{T_i^*\\leq C_i\\}}\\) censoring indicator, \\(i=1,\\dotsc,n\\)\nLongitudinal data \\(\\require{color}\\textcolor{teal}{\\{\\boldsymbol{y}_{li}; i=1,\\dots,n, l=1,\\dots,L\\}}\\)\n\n\\(\\require{color}\\textcolor{teal}{y_{li}(t_{ij})}\\) value of the longitudinal outcome at \\(t_{ij}\\), \\(j=1,\\dots,n_{li}\\)\n\n\\(\\require{color}\\textcolor{teal}{w_i}\\) vector of baseline covarites"
+  },
+  {
+    "objectID": "index.html#multivariate-longitudinal-data",
+    "href": "index.html#multivariate-longitudinal-data",
+    "title": "",
+    "section": "Multivariate longitudinal data",
+    "text": "Multivariate longitudinal data\n\n\n\n\n\n\n\n\\[\\cdots\\]\n\n\n\n\n\n\\[\\begin{split}\n  (T_1 &,\\delta_1) \\\\\n  &w_1\n  \\end{split}\\]\n\n\n\\[\\begin{split}\n  (T_2 &,\\delta_2) \\\\\n  &w_2\n  \\end{split}\\]\n\n\n\\[\\begin{split}\n  (T_n &,\\delta_n) \\\\\n  &w_n\n  \\end{split}\\]"
   },
   {
     "objectID": "index.html#code",
