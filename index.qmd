@@ -33,20 +33,20 @@ format:
 
 ## Context and motivation
 
--   [Time-to-event and longitudinal data]{style="color:green;"} are fundamental in health-related data
--   A significant feature is its [temporal]{style="color:green;"} dimension, allowing for [dynamic predictions]{style="color:green;"}
--   These predictions have demonstrated utility in [precision medicine]{style="color:green;"}
+-   [Time-to-event and longitudinal data]{style="color:#00BFFF;"} are fundamental in health-related data
+-   A significant feature is its [temporal]{style="color:#00BFFF;"} dimension, allowing for [dynamic predictions]{style="color:#00BFFF;"}
+-   These predictions have demonstrated utility in [precision medicine]{style="color:#00BFFF;"}
 
 ## Context and motivation
 
--   [Joint models (JMs)]{style="color:green;"} provide a powerful framework for analyzing time-to-event and longitudinal data together
--   JMs allow [dynamic predictions]{style="color:green;"}
+-   [Joint models (JMs)]{style="color:#00BFFF;"} provide a powerful framework for analyzing time-to-event and longitudinal data together
+-   JMs allow [dynamic predictions]{style="color:#00BFFF;"}
 -   Applying JMs to multivariate longitudinal data poses [challenges]{style="color:red;"} due to the [increased number of random effects and parameters]{style="color:red;"}
 
 ## The PBC dataset
 
--   The [PBC dataset]{style="color:green;"} is a widely used, [freely available]{style="color:green;"}, dataset that will be used to apply the methods
--   By using the PBC dataset, all methods are [fully reproducible]{style="color:green;"} 
+-   The [PBC dataset]{style="color:#00BFFF;"} is a widely used, [freely available]{style="color:#00BFFF;"}, dataset that will be used to apply the methods
+-   By using the PBC dataset, all methods are [fully reproducible]{style="color:#00BFFF;"} 
 -   Primary biliary cirrhosis (PBC) is a rare disease that could eventually lead to liver cirrhosis
 
 ## The PBC dataset
@@ -78,10 +78,10 @@ format:
   <!-- SVG rectangle for first two images (green) -->
   <svg class="highlight-line fragment"  
        style="top:0; left:0; width: 702px; height: 351px;">
-    <line x1="1%" y1="1%" x2="99%" y2="1%" stroke="green" stroke-width="4" />
-    <line x1="1%" y1="1%" x2="1%" y2="97%" stroke="green" stroke-width="4" />
-    <line x1="1%" y1="97%" x2="99%" y2="97%" stroke="green" stroke-width="4" />
-    <line x1="99%" y1="1%" x2="99%" y2="97%" stroke="green" stroke-width="4" />
+    <line x1="1%" y1="1%" x2="99%" y2="1%" stroke="#2E8B57" stroke-width="4" />
+    <line x1="1%" y1="1%" x2="1%" y2="97%" stroke="#2E8B57" stroke-width="4" />
+    <line x1="1%" y1="97%" x2="99%" y2="97%" stroke="#2E8B57" stroke-width="4" />
+    <line x1="99%" y1="1%" x2="99%" y2="97%" stroke="#2E8B57" stroke-width="4" />
   </svg>
 
 
@@ -99,12 +99,12 @@ format:
   <!-- SVG rectangle for last four images (red) -->
   <svg class="highlight-line fragment" 
        style="position:absolute; top:0; left:0; width: 1100px; height: 720px;"viewBox="0 0 1061 719">
-    <line x1="0%" y1="50%" x2="65%" y2="50%" stroke="red" stroke-width="4" />
-    <line x1="65%" y1="50%" x2="65%" y2="1%" stroke="red" stroke-width="4" />
-    <line x1="65%" y1="1%" x2="95%" y2="1%" stroke="red" stroke-width="4" />
-    <line x1="95%" y1="1%" x2="95%" y2="88%" stroke="red" stroke-width="4" />
-    <line x1="95%" y1="88%" x2="0%" y2="88%" stroke="red" stroke-width="4" />
-    <line x1="0%" y1="88%" x2="0%" y2="50%" stroke="red" stroke-width="4" />
+    <line x1="0%" y1="50%" x2="65%" y2="50%" stroke="#D2691E" stroke-width="4" />
+    <line x1="65%" y1="50%" x2="65%" y2="1%" stroke="#D2691E" stroke-width="4" />
+    <line x1="65%" y1="1%" x2="95%" y2="1%" stroke="#D2691E" stroke-width="4" />
+    <line x1="95%" y1="1%" x2="95%" y2="88%" stroke="#D2691E" stroke-width="4" />
+    <line x1="95%" y1="88%" x2="0%" y2="88%" stroke="#D2691E" stroke-width="4" />
+    <line x1="0%" y1="88%" x2="0%" y2="50%" stroke="#D2691E" stroke-width="4" />
   </svg>
 
 
@@ -112,13 +112,13 @@ format:
 
 ## Notation
 
--   $\require{color}\textcolor{teal}{T_1^*,\dots, T_n^*}$ true time until event
--   $\require{color}\textcolor{teal}{C_1,\dots, C_n}$ true time until event
--   $\require{color}\textcolor{teal}{T_i=\min(T_i^*, C_i)}$ observed times, $i=1,\dotsc,n$
--   $\require{color}\textcolor{teal}{\delta_i=\mathbf{1}\{T_i^*\leq C_i\}}$ censoring indicator, $i=1,\dotsc,n$
--   Longitudinal data $\require{color}\textcolor{teal}{\{\boldsymbol{y}_{li}; i=1,\dots,n, l=1,\dots,L\}}$
-    -   $\require{color}\textcolor{teal}{y_{li}(t_{ij})}$ value of the longitudinal outcome at $t_{ij}$, $j=1,\dots,n_{li}$
--   $\require{color}\textcolor{teal}{w_i}$ vector of baseline covarites
+-   $\require{color}\textcolor{#2E8B57}{T_1^*,\dots, T_n^*}$ true time until event
+-   $\require{color}\textcolor{#2E8B57}{C_1,\dots, C_n}$ true time until event
+-   $\require{color}\textcolor{#2E8B57}{T_i=\min(T_i^*, C_i)}$ observed times, $i=1,\dotsc,n$
+-   $\require{color}\textcolor{#2E8B57}{\delta_i=\mathbf{1}\{T_i^*\leq C_i\}}$ censoring indicator, $i=1,\dotsc,n$
+-   Longitudinal data $\require{color}\textcolor{#D2691E}{\{\boldsymbol{y}_{li}; i=1,\dots,n, l=1,\dots,L\}}$
+    -   $\require{color}\textcolor{#D2691E}{y_{li}(t_{ij})}$ value of the longitudinal outcome at $t_{ij}$, $j=1,\dots,n_{li}$
+-   $\require{color}\textcolor{#2E8B57}{w_i}$ vector of baseline covarites
 
 
 ## Multivariate longitudinal data
@@ -145,7 +145,7 @@ format:
 
 ::: {.fragment .fade-in-then-out}
 <div style="position:absolute; top:80%; left:9%; font-size:30px;">
-  $$\begin{split}
+  $$\require{color}\color{#2E8B57}\begin{split}
   (T_1 &,\delta_1) \\
   &w_1
   \end{split}$$
@@ -153,7 +153,7 @@ format:
 :::
 
 <div style="position:absolute; top:80%; left:3%; font-size:30px;" class="fragment fade-in">
-  $$\scriptsize{\begin{split}
+  $$\require{color}\color{#2E8B57}\scriptsize{\begin{split}
   (1.09 , & 1) \\
   (\text{female}, \text{ D} & \text{-peni} , 57)
   \end{split}}$$
@@ -165,7 +165,7 @@ format:
 
 ::: {.fragment .fade-in-then-out}
 <div style="position:absolute; top:80%; left:32%; font-size:30px;">
-  $$\begin{split}
+  $$\require{color}\color{#2E8B57}\begin{split}
   (T_2 &,\delta_2) \\
   &w_2
   \end{split}$$
@@ -173,7 +173,7 @@ format:
 :::
 
 <div style="position:absolute; top:80%; left:27%; font-size:30px;" class="fragment fade-in">
-  $$\scriptsize{\begin{split}
+  $$\require{color}\color{#2E8B57}\scriptsize{\begin{split}
   (14.15 , & 0) \\
   (\text{female}, \text{ D} & \text{-peni}  , 56)
   \end{split}}$$
@@ -185,7 +185,7 @@ format:
 
 ::: {.fragment .fade-in-then-out}
 <div style="position:absolute; top:80%; left:79%; font-size:30px;">
-  $$\begin{split}
+  $$\require{color}\color{#2E8B57}\begin{split}
   (T_n &,\delta_n) \\
   &w_n
   \end{split}$$
@@ -193,7 +193,7 @@ format:
 :::
 
 <div style="position:absolute; top:80%; left:72%; font-size:30px;" class="fragment fade-in">
-  $$\scriptsize{\begin{split}
+  $$\require{color}\color{#2E8B57}\scriptsize{\begin{split}
   (3.98 , & 0) \\
   (\text{female}, \text{ plac} & \text{ebo} , 33)
   \end{split}}$$
@@ -231,26 +231,26 @@ format:
 </div>
 
 <div style="position:absolute; top:80%; left:4%; font-size:30px;" class="fragment fade-in">
-  $$\scriptsize{\begin{split}
-  (T_1 &,\delta_1) \\
-  &w_1 \\
-  (y_{11}(t_{ij}), & \dots, y_{L1}(t_{ij}))
+  $$\require{color}\scriptsize{\begin{split}
+  \color{#2E8B57}(T_1 &,\color{#2E8B57}\delta_1) \\
+  & \color{#2E8B57}w_1 \\
+  \color{#D2691E}(y_{11}(t_{ij}), & \color{#D2691E}\dots, y_{L1}(t_{ij}))
   \end{split}}$$
 </div>
 
 <div style="position:absolute; top:80%; left:28%; font-size:30px;" class="fragment fade-in">
   $$\scriptsize{\begin{split}
-  (T_2 &,\delta_2) \\
-  &w_2 \\
-  (y_{12}(t_{ij}), & \dots, y_{L2}(t_{ij}))
+  \color{#2E8B57}(T_2 &,\color{#2E8B57}\delta_2) \\
+  & \color{#2E8B57}w_2 \\
+  \color{#D2691E}(y_{12}(t_{ij}), & \color{#D2691E}\dots, y_{L2}(t_{ij}))
   \end{split}}$$
 </div>
 
 <div style="position:absolute; top:80%; left:75%; font-size:30px;" class="fragment fade-in">
   $$\scriptsize{\begin{split}
-  (T_n &,\delta_n) \\
-  &w_n \\
-  (y_{1n}(t_{ij}), & \dots, y_{Ln}(t_{ij}))
+  \color{#2E8B57}(T_n &,\color{#2E8B57}\delta_n) \\
+  & \color{#2E8B57}w_n \\
+  \color{#D2691E}(y_{1n}(t_{ij}), & \color{#D2691E}\dots, y_{Ln}(t_{ij}))
   \end{split}}$$
 </div>
 
@@ -264,19 +264,19 @@ format:
   $$i$$
 </div>
 
-<div style="position:absolute; top:40%; left:10%; font-size:30px;">
-  <img src="images/arrowh.png" style="width:15%;" class="fragment fade-in">
+<div style="position:absolute; top:42%; left:13%; font-size:30px;">
+  <img src="images/arrowh.png" style="width:10%;" class="fragment fade-in">
 </div>
 
 <div style="position:absolute; top:15%; left:52%; font-size:25px;" class="fragment fade-in">
-  $$\scriptsize{\begin{split}
+  $$\require{color}\color{#2E8B57}\scriptsize{\begin{split}
   &(T_i ,\delta_i) = (6.43, 0) \\
   w_i &= (\text{female}, \text{ D} \text{-peni}  , 56)
   \end{split}}$$
 </div>
 
 <div style="position:absolute; top:25%; left:39%; font-size:25px;" class="fragment fade-in">
-  $$\scriptsize{\begin{split}
+  $$\require{color}\color{#D2691E}\scriptsize{\begin{split}
   &(y_{1i}(t_{ij}), y_{2i}(t_{ij}) , y_{3i}(t_{ij})) = \\
   (\log(\texttt{serBilir})_i&(t_{ij}), \texttt{albumin}_i(t_{ij}), \texttt{alkaline}_i(t_{ij})) 
   \end{split}}$$
@@ -302,7 +302,7 @@ format:
   $$
   \scriptsize\require{color}
   \begin{cases}
-g_l\left(E(t_{ij}|\boldsymbol{b}_{li})\right)=\colorbox{#D2691E}{$\color{white}m_{li}(t)$}= \colorbox{#D2691E}{$\color{white}\boldsymbol x_{li}^\top(t)\boldsymbol\beta_l +  \boldsymbol z_{li}^\top(t)\boldsymbol b_{li}$}, \quad l=1,\dots,L \\
+g_l\left(E(y_{li}(t)|\boldsymbol{b}_{li})\right)=\colorbox{#D2691E}{$\color{white}m_{li}(t)$}= \colorbox{#D2691E}{$\color{white}\boldsymbol x_{li}^\top(t)\boldsymbol\beta_l +  \boldsymbol z_{li}^\top(t)\boldsymbol b_{li}$}, \quad l=1,\dots,L \\
 \\
 h_i(t)= h_0(t)\exp \left[ \, \colorbox{#2E8B57}{$\color{white}\boldsymbol w_i^\top \boldsymbol\gamma$} + \sum_{l=0}^L\alpha_l\, \colorbox{#D2691E}{$\color{white}m_{li}(t)$} \, \right] \\
 \end{cases}
@@ -332,19 +332,87 @@ h_i(t)= h_0(t)\exp \left[ \, \colorbox{#2E8B57}{$\color{white}\boldsymbol w_i^\t
 <div style="position:absolute; top:72%; left:42%" class="fragment fade-in-then-out">
   $$
   \large\require{color}
-  (\, \textcolor{#D2691E}{\boldsymbol{y}} , \boldsymbol{b}\, ) (\,\textcolor{#2E8B57}{T^*} , \boldsymbol{b}\, )
+  (\, \textcolor{#D2691E}{\boldsymbol{y}} \mid \boldsymbol{b}\, ) (\,\textcolor{#2E8B57}{T^*} \mid \boldsymbol{b}\, )
   $$
 </div>
 
 <div style="position:absolute; top:72%; left:20%;" class="fragment fade-in-then-out">
   $$
   \large\require{color}
-  (\, \textcolor{#D2691E}{\boldsymbol{y_1}} , \boldsymbol{b_1}\, ) \cdots (\, \textcolor{#D2691E}{\boldsymbol{y_L}} , \boldsymbol{b_L}\, ) (\,\textcolor{#2E8B57}{T^*} , \boldsymbol{b}\, )
+  (\, \textcolor{#D2691E}{\boldsymbol{y_1}} \mid \boldsymbol{b_1}\, ) \cdots (\, \textcolor{#D2691E}{\boldsymbol{y_L}} \mid \boldsymbol{b_L}\, ) (\,\textcolor{#2E8B57}{T^*} \mid \boldsymbol{b}\, )
   $$
 </div>
 
+## Dynamic predictions
 
+- New subject $j$ with $\textcolor{#2E8B57}{w_j}$ and
 
+$$
+\require{color}\color{#D2691E}\boldsymbol{\mathcal{Y}_{j}^o(t)}=\left\{y_{lj}(t_{ik}) ; 0 \leq t_{ik} \leq t, k=1,\dots, n_{lj}, l=1,\dots,L\right\}
+$$
+
+<div class="fragment fade-in">
+  - Cumulative risk probabilities 
+  
+  $$
+  \scriptsize\require{color}
+  \pi_{j}(u \mid t)=\operatorname{P}\left(T_{j}^* \leq u \mid T_{j}^*>t, \boldsymbol{\color{#D2691E}{\mathcal{Y}}_{j}^o(t)},  \textcolor{#2E8B57}{w_j}; \boldsymbol{\theta}\right)
+  $$
+</div>
+
+<div style="position:absolute; top:82%; left:0%;" class="fragment fade-in-then-out">
+  - Estimation based on posterior predictive distributions
+</div>
+
+<div style="position:absolute; top:82%; left:0%;" class="fragment fade-in-then-out">
+  - Monte Carlo scheme used in practice
+</div>
+
+## Super learning
+
+- [Super learning (SL)]{style="color:#00BFFF;"} is an ensemble method that [combines]{style="color:#00BFFF;"} prediction algorithms to obtain an optimal prediction
+- [Optimality]{style="color:#00BFFF;"} is defined with respect a prespecified proper scoring rule
+- SL is built under [cross-validation]{style="color:#00BFFF;"} (CV) framework
+
+## Idea
+
+- [Decompose]{style="color:#00BFFF;"} the multivariate joint model:
+
+<div style="position:absolute; top:44%; left:0%; font-size:25px;" class="fragment fade-in">
+  $$\normalsize\require{color}
+  h_i(t)= h_0(t)\exp \left[ \, \boldsymbol w_i^\top \boldsymbol\gamma + \sum_{l=0}^L\alpha_l\, m_{li}(t) \, \right]$$
+</div>
+
+<div style="position:absolute; top:31%; left:50%; font-size:30px;">
+  <img src="images/arrow3.png" style="width:25%;" class="fragment fade-in">
+</div>
+
+<div style="position:absolute; top:27%; left:64%; font-size:25px;" class="fragment fade-in">
+  $$\normalsize\require{color}
+  M_1:\, h_i(t)= h_0(t)\exp \left[ \, \boldsymbol w_i^\top \boldsymbol\gamma + \alpha_1\, m_{1i}(t) \, \right]$$
+</div>
+
+<div style="position:absolute; top:39%; left:50%; font-size:30px;">
+  <img src="images/arrow4.png" style="width:25%;" class="fragment fade-in">
+</div>
+
+<div style="position:absolute; top:35%; left:64%; font-size:25px;" class="fragment fade-in">
+  $$\normalsize\require{color}
+  M_2:\,h_i(t)= h_0(t)\exp \left[ \, \boldsymbol w_i^\top \boldsymbol\gamma + \alpha_2\, m_{2i}(t) \, \right]$$
+</div>
+
+<div style="position:absolute; top:49%; left:85%; font-size:25px;" class="fragment fade-in">
+  $$\huge\vdots$$
+</div>
+
+<div style="position:absolute; top:59%; left:50%; font-size:30px;">
+  <img src="images/arrow5.png" style="width:25%;" class="fragment fade-in">
+</div>
+
+<div style="position:absolute; top:69%; left:64%; font-size:25px;" class="fragment fade-in">
+  $$\normalsize\require{color}
+  M_L:\, h_i(t)= h_0(t)\exp \left[ \, \boldsymbol w_i^\top \boldsymbol\gamma + \alpha_L\, m_{Li}(t) \, \right]$$
+</div>
 
 
 ## Formulas
