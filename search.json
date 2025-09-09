@@ -74,7 +74,7 @@
     "href": "index.html#dynamic-predictions",
     "title": "",
     "section": "Dynamic predictions",
-    "text": "Dynamic predictions\n\nNew subject \\(j\\) with \\(\\textcolor{#2E8B57}{w_j}\\) and\n\n\\[\n\\require{color}\\color{#D2691E}\\boldsymbol{\\mathcal{Y}_{j}^o(t)}=\\left\\{y_{lj}(t_{ik}) ; 0 \\leq t_{ik} \\leq t, k=1,\\dots, n_{lj}, l=1,\\dots,L\\right\\}\n\\]\n\n\nCumulative risk probabilities\n\n\\[\n  \\scriptsize\\require{color}\n  \\pi_{j}(u \\mid t)=\\operatorname{P}\\left(T_{j}^* \\leq u \\mid T_{j}^*&gt;t, \\boldsymbol{\\color{#D2691E}{\\mathcal{Y}}_{j}^o(t)},  \\textcolor{#2E8B57}{w_j}; \\boldsymbol{\\theta}\\right)\n  \\]\n\n\n\nEstimation based on posterior predictive distributions\n\n\n\n\nMonte Carlo scheme used in practice"
+    "text": "Dynamic predictions\n\nNew subject \\(j\\) with \\(\\textcolor{#2E8B57}{w_j}\\) and\n\n\\[\n\\require{color}\\color{#D2691E}\\boldsymbol{\\mathcal{Y}_{j}^o(t)}=\\left\\{y_{lj}(t_{ik}) ; 0 \\leq t_{ik} \\leq t, k=1,\\dots, n_{lj}, l=1,\\dots,L\\right\\}\n\\]\n\n\nCumulative risk probabilities\n\n\\[\n  \\normalsize\\require{color}\n  \\pi_{j}(u \\mid t)=\\operatorname{P}\\left(T_{j}^* \\leq u \\mid T_{j}^*&gt;t, \\boldsymbol{\\color{#D2691E}{\\mathcal{Y}}_{j}^o(t)},  \\textcolor{#2E8B57}{w_j}; \\boldsymbol{\\theta}\\right)\n  \\]\n\n\n\nEstimation based on posterior predictive distributions\n\n\n\n\nMonte Carlo scheme used in practice"
   },
   {
     "objectID": "index.html#super-learning",
@@ -89,6 +89,48 @@
     "title": "",
     "section": "Idea",
     "text": "Idea\n\nDecompose the multivariate joint model:\n\n\n\\[\\normalsize\\require{color}\n  h_i(t)= h_0(t)\\exp \\left[ \\, \\boldsymbol w_i^\\top \\boldsymbol\\gamma + \\sum_{l=0}^L\\alpha_l\\, m_{li}(t) \\, \\right]\\]\n\n\n\n\n\n\\[\\normalsize\\require{color}\n  M_1:\\, h_i(t)= h_0(t)\\exp \\left[ \\, \\boldsymbol w_i^\\top \\boldsymbol\\gamma + \\alpha_1\\, m_{1i}(t) \\, \\right]\\]\n\n\n\n\n\n\\[\\normalsize\\require{color}\n  M_2:\\,h_i(t)= h_0(t)\\exp \\left[ \\, \\boldsymbol w_i^\\top \\boldsymbol\\gamma + \\alpha_2\\, m_{2i}(t) \\, \\right]\\]\n\n\n\\[\\huge\\vdots\\]\n\n\n\n\n\n\\[\\normalsize\\require{color}\n  M_L:\\, h_i(t)= h_0(t)\\exp \\left[ \\, \\boldsymbol w_i^\\top \\boldsymbol\\gamma + \\alpha_L\\, m_{Li}(t) \\, \\right]\\]"
+  },
+  {
+    "objectID": "index.html#super-learning-1",
+    "href": "index.html#super-learning-1",
+    "title": "",
+    "section": "Super learning",
+    "text": "Super learning"
+  },
+  {
+    "objectID": "index.html#simulation-study",
+    "href": "index.html#simulation-study",
+    "title": "",
+    "section": "Simulation study",
+    "text": "Simulation study"
+  },
+  {
+    "objectID": "index.html#case-study",
+    "href": "index.html#case-study",
+    "title": "",
+    "section": "Case study",
+    "text": "Case study"
+  },
+  {
+    "objectID": "index.html#software",
+    "href": "index.html#software",
+    "title": "",
+    "section": "Software",
+    "text": "Software"
+  },
+  {
+    "objectID": "index.html#discussion",
+    "href": "index.html#discussion",
+    "title": "",
+    "section": "Discussion",
+    "text": "Discussion"
+  },
+  {
+    "objectID": "index.html#acknowledgements",
+    "href": "index.html#acknowledgements",
+    "title": "",
+    "section": "Acknowledgements",
+    "text": "Acknowledgements"
   },
   {
     "objectID": "index.html#formulas",
