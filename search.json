@@ -63,11 +63,11 @@
     "text": "Multivariate longitudinal data\n\n\n\n\n\\[i\\]\n\n\n\n\n\n\\[\\scriptsize{\\begin{split}\n  &(T_i ,\\delta_i) = (6.43, 0) \\\\\n  w_i &= (\\text{female}, \\text{ D} \\text{-peni}  , 56)\n  \\end{split}}\\]\n\n\n\\[\\scriptsize{\\begin{split}\n  &(y_{1i}(t_{ij}), y_{2i}(t_{ij}) , y_{3i}(t_{ij})) = \\\\\n  (\\log(\\texttt{serBilir})_i&(t_{ij}), \\texttt{albumin}_i(t_{ij}), \\texttt{alkaline}_i(t_{ij}))\n  \\end{split}}\\]"
   },
   {
-    "objectID": "index.html#code",
-    "href": "index.html#code",
+    "objectID": "index.html#methods",
+    "href": "index.html#methods",
     "title": "",
-    "section": "Code",
-    "text": "Code\nWhen you click the Render button a presentation will be generated that includes both content and the output of embedded code. You can embed code like this:\n\n\n[1] 2"
+    "section": "Methods",
+    "text": "Methods\n\nJoint model:\n\n\n\\[\n  \\scriptsize\\require{color}\n  \\begin{cases}\ng_l\\left(E(t_{ij}|\\boldsymbol{b}_{li})\\right)=\\colorbox{#D2691E}{$\\color{white}m_{li}(t)$}= \\colorbox{#D2691E}{$\\color{white}\\boldsymbol x_{li}^\\top(t)\\boldsymbol\\beta_l +  \\boldsymbol z_{li}^\\top(t)\\boldsymbol b_{li}$}, \\quad l=1,\\dots,L \\\\\n\\\\\nh_i(t)= h_0(t)\\exp \\left[ \\, \\colorbox{#2E8B57}{$\\color{white}\\boldsymbol w_i^\\top \\boldsymbol\\gamma$} + \\sum_{l=0}^L\\alpha_l\\, \\colorbox{#D2691E}{$\\color{white}m_{li}(t)$} \\, \\right] \\\\\n\\end{cases}\n  \\]\n\n\n\nWe assume\n\n\\[\n  \\scriptsize\\require{color}\n  \\boldsymbol{b}_i = (\\boldsymbol{b}_{1i}^\\top, \\boldsymbol{b}_{2i}^\\top, \\dots, \\boldsymbol{b}_{Li}^\\top)^\\top \\sim N\\left( \\boldsymbol{0} , \\boldsymbol{D} \\right)\n  \\]\n\n\n\nConditional independence is assumed\n\n\n\n\\[\n  \\large\\require{color}\n  (\\, \\textcolor{#D2691E}{\\boldsymbol{y}} , \\textcolor{#2E8B57}{T^*} , \\boldsymbol{b}\\, )\n  \\]\n\n\n\\[\n  \\large\\require{color}\n  (\\, \\textcolor{#D2691E}{\\boldsymbol{y}} , \\boldsymbol{b}\\, ) (\\,\\textcolor{#2E8B57}{T^*} , \\boldsymbol{b}\\, )\n  \\]\n\n\n\\[\n  \\large\\require{color}\n  (\\, \\textcolor{#D2691E}{\\boldsymbol{y_1}} , \\boldsymbol{b_1}\\, ) \\cdots (\\, \\textcolor{#D2691E}{\\boldsymbol{y_L}} , \\boldsymbol{b_L}\\, ) (\\,\\textcolor{#2E8B57}{T^*} , \\boldsymbol{b}\\, )\n  \\]"
   },
   {
     "objectID": "index.html#formulas",
