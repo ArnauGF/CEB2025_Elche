@@ -67,16 +67,26 @@ format:
   <img src="images/y4_PBC.png" style="width:290px;" class="fragment fade-in">
   
   <!-- SVG rectangle for first two images (green) -->
-  <svg class="highlight-line fragment"  
+  <!--svg class="highlight-line fragment"  
        style="top:0; left:0; width: 702px; height: 351px;">
     <line x1="1" y1="1" x2="701" y2="1" stroke="green" stroke-width="4" />
     <line x1="1" y1="1" x2="1" y2="320" stroke="green" stroke-width="4" />
     <line x1="1" y1="320" x2="701" y2="320" stroke="green" stroke-width="4" />
     <line x1="701" y1="1" x2="701" y2="320" stroke="green" stroke-width="4" />
+  </svg-->
+  
+  <!-- SVG rectangle for first two images (green) -->
+  <svg class="highlight-line fragment"  
+       style="top:0; left:0; width: 702px; height: 351px;">
+    <line x1="1%" y1="1%" x2="99%" y2="1%" stroke="green" stroke-width="4" />
+    <line x1="1%" y1="1%" x2="1%" y2="97%" stroke="green" stroke-width="4" />
+    <line x1="1%" y1="97%" x2="99%" y2="97%" stroke="green" stroke-width="4" />
+    <line x1="99%" y1="1%" x2="99%" y2="97%" stroke="green" stroke-width="4" />
   </svg>
 
+
   <!-- SVG rectangle for last four images (red) -->
-  <svg class="highlight-line fragment" 
+  <!--svg class="highlight-line fragment" 
        style="position:absolute; top:0; left:0; width: 1100px; height: 720px;"viewBox="0 0 1061 719">
     <line x1="0" y1="360" x2="701" y2="360" stroke="red" stroke-width="4" />
     <line x1="701" y1="360" x2="701" y2="1" stroke="red" stroke-width="4" />
@@ -84,6 +94,17 @@ format:
     <line x1="1020" y1="1" x2="1020" y2="630" stroke="red" stroke-width="4" />
     <line x1="1020" y1="630" x2="0" y2="630" stroke="red" stroke-width="4" />
     <line x1="0" y1="630" x2="0" y2="360" stroke="red" stroke-width="4" />
+  </svg-->
+  
+  <!-- SVG rectangle for last four images (red) -->
+  <svg class="highlight-line fragment" 
+       style="position:absolute; top:0; left:0; width: 1100px; height: 720px;"viewBox="0 0 1061 719">
+    <line x1="0%" y1="50%" x2="65%" y2="50%" stroke="red" stroke-width="4" />
+    <line x1="65%" y1="50%" x2="65%" y2="1%" stroke="red" stroke-width="4" />
+    <line x1="65%" y1="1%" x2="95%" y2="1%" stroke="red" stroke-width="4" />
+    <line x1="95%" y1="1%" x2="95%" y2="88%" stroke="red" stroke-width="4" />
+    <line x1="95%" y1="88%" x2="0%" y2="88%" stroke="red" stroke-width="4" />
+    <line x1="0%" y1="88%" x2="0%" y2="50%" stroke="red" stroke-width="4" />
   </svg>
 
 
@@ -247,14 +268,14 @@ format:
   <img src="images/arrowh.png" style="width:15%;" class="fragment fade-in">
 </div>
 
-<div style="position:absolute; top:15%; left:60%; font-size:25px;" class="fragment fade-in">
+<div style="position:absolute; top:15%; left:52%; font-size:25px;" class="fragment fade-in">
   $$\scriptsize{\begin{split}
   &(T_i ,\delta_i) = (6.43, 0) \\
   w_i &= (\text{female}, \text{ D} \text{-peni}  , 56)
   \end{split}}$$
 </div>
 
-<div style="position:absolute; top:25%; left:47%; font-size:25px;" class="fragment fade-in">
+<div style="position:absolute; top:25%; left:39%; font-size:25px;" class="fragment fade-in">
   $$\scriptsize{\begin{split}
   &(y_{1i}(t_{ij}), y_{2i}(t_{ij}) , y_{3i}(t_{ij})) = \\
   (\log(\texttt{serBilir})_i&(t_{ij}), \texttt{albumin}_i(t_{ij}), \texttt{alkaline}_i(t_{ij})) 
