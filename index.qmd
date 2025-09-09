@@ -294,15 +294,58 @@ format:
   <img src="images/id_alk_PBC.png" style="width:100%;" class="fragment fade-in">
 </div>
 
+## Methods
+
+- Joint model:
+
+<div class="fragment fade-in">
+  $$
+  \scriptsize\require{color}
+  \begin{cases}
+g_l\left(E(t_{ij}|\boldsymbol{b}_{li})\right)=\colorbox{#D2691E}{$\color{white}m_{li}(t)$}= \colorbox{#D2691E}{$\color{white}\boldsymbol x_{li}^\top(t)\boldsymbol\beta_l +  \boldsymbol z_{li}^\top(t)\boldsymbol b_{li}$}, \quad l=1,\dots,L \\
+\\
+h_i(t)= h_0(t)\exp \left[ \, \colorbox{#2E8B57}{$\color{white}\boldsymbol w_i^\top \boldsymbol\gamma$} + \sum_{l=0}^L\alpha_l\, \colorbox{#D2691E}{$\color{white}m_{li}(t)$} \, \right] \\
+\end{cases}
+  $$
+</div>
+
+<div style="position:absolute; top:60%; left:0%;" class="fragment fade-in-then-out">
+  - We assume 
+  
+  $$
+  \scriptsize\require{color}
+  \boldsymbol{b}_i = (\boldsymbol{b}_{1i}^\top, \boldsymbol{b}_{2i}^\top, \dots, \boldsymbol{b}_{Li}^\top)^\top \sim N\left( \boldsymbol{0} , \boldsymbol{D} \right)
+  $$
+</div>
+
+<div style="position:absolute; top:60%; left:0%;" class="fragment fade-in">
+  - Conditional independence is assumed 
+</div>
+
+<div style="position:absolute; top:72%; left:45%;" class="fragment fade-in-then-out">
+  $$
+  \large\require{color}
+  (\, \textcolor{#D2691E}{\boldsymbol{y}} , \textcolor{#2E8B57}{T^*} , \boldsymbol{b}\, )
+  $$
+</div>
+
+<div style="position:absolute; top:72%; left:42%" class="fragment fade-in-then-out">
+  $$
+  \large\require{color}
+  (\, \textcolor{#D2691E}{\boldsymbol{y}} , \boldsymbol{b}\, ) (\,\textcolor{#2E8B57}{T^*} , \boldsymbol{b}\, )
+  $$
+</div>
+
+<div style="position:absolute; top:72%; left:20%;" class="fragment fade-in-then-out">
+  $$
+  \large\require{color}
+  (\, \textcolor{#D2691E}{\boldsymbol{y_1}} , \boldsymbol{b_1}\, ) \cdots (\, \textcolor{#D2691E}{\boldsymbol{y_L}} , \boldsymbol{b_L}\, ) (\,\textcolor{#2E8B57}{T^*} , \boldsymbol{b}\, )
+  $$
+</div>
 
 
-## Code
 
-When you click the **Render** button a presentation will be generated that includes both content and the output of embedded code. You can embed code like this:
 
-```{r}
-1 + 1
-```
 
 ## Formulas
 
