@@ -35,11 +35,18 @@
     "text": "The PBC dataset"
   },
   {
+    "objectID": "index.html#the-pbc-dataset-2",
+    "href": "index.html#the-pbc-dataset-2",
+    "title": "",
+    "section": "The PBC dataset",
+    "text": "The PBC dataset"
+  },
+  {
     "objectID": "index.html#notation",
     "href": "index.html#notation",
     "title": "",
     "section": "Notation",
-    "text": "Notation\n\n\\(\\require{color}\\textcolor{#2E8B57}{T_1^*,\\dots, T_n^*}\\) true time until event\n\\(\\require{color}\\textcolor{#2E8B57}{C_1,\\dots, C_n}\\) true time until event\n\\(\\require{color}\\textcolor{#2E8B57}{T_i=\\min(T_i^*, C_i)}\\) observed times, \\(i=1,\\dotsc,n\\)\n\\(\\require{color}\\textcolor{#2E8B57}{\\delta_i=\\mathbf{1}\\{T_i^*\\leq C_i\\}}\\) censoring indicator, \\(i=1,\\dotsc,n\\)\nLongitudinal data \\(\\require{color}\\textcolor{#D2691E}{\\{\\boldsymbol{y}_{li}; i=1,\\dots,n, l=1,\\dots,L\\}}\\)\n\n\\(\\require{color}\\textcolor{#D2691E}{y_{li}(t_{ij})}\\) value of the longitudinal outcome at \\(t_{ij}\\), \\(j=1,\\dots,n_{li}\\)\n\n\\(\\require{color}\\textcolor{#2E8B57}{w_i}\\) vector of baseline covarites"
+    "text": "Notation\n\n\\(\\require{color}\\textcolor{#2E8B57}{T_1^*,\\dots, T_n^*}\\) true time until event\n\\(\\require{color}\\textcolor{#2E8B57}{C_1,\\dots, C_n}\\) censoring times\n\\(\\require{color}\\textcolor{#2E8B57}{T_i=\\min(T_i^*, C_i)}\\) observed times, \\(i=1,\\dotsc,n\\)\n\\(\\require{color}\\textcolor{#2E8B57}{\\delta_i=\\mathbf{1}\\{T_i^*\\leq C_i\\}}\\) censoring indicator, \\(i=1,\\dotsc,n\\)\nLongitudinal data \\(\\require{color}\\textcolor{#D2691E}{\\{\\boldsymbol{y}_{li}; i=1,\\dots,n, l=1,\\dots,L\\}}\\)\n\n\\(\\require{color}\\textcolor{#D2691E}{y_{li}(t_{ij})}\\) value of the longitudinal outcome at \\(t_{ij}\\), \\(j=1,\\dots,n_{li}\\)\n\n\\(\\require{color}\\textcolor{#2E8B57}{w_i}\\) vector of baseline covarites"
   },
   {
     "objectID": "index.html#multivariate-longitudinal-data",

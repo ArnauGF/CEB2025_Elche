@@ -51,7 +51,6 @@ format:
 
 ## The PBC dataset
 
-
 <div class="image-grid">
   
   <img src="images/KM_PBC.png" style="width:290px;" class="fragment fade-in">
@@ -110,10 +109,40 @@ format:
 
 </div>
 
+## The PBC dataset
+
+<div style="position:absolute; top:12%; left:8%;" class="fragment fade-in-then-out">
+  <img src="images/pbc2.png" style="width:90%; text-align:center;">
+</div>
+
+<div style="position:absolute; top:12%; left:8%;" class="fragment fade-in-then-out">
+  <img src="images/pbc3.png" style="width:90%; text-align:center;">
+</div>
+
+<div style="position:absolute; top:12%; left:8%;" class="fragment fade-in-then-out">
+  <img src="images/pbc4.png" style="width:90%; text-align:center;">
+</div>
+
+<div style="position:absolute; top:12%; left:8%;" class="fragment fade-in-then-out">
+  <img src="images/pbc5.png" style="width:90%; text-align:center;">
+</div>
+
+<div style="position:absolute; top:12%; left:8%;" class="fragment fade-in-then-out">
+  <img src="images/pbc6.png" style="width:90%; text-align:center;">
+</div>
+
+<div style="position:absolute; top:12%; left:8%;" class="fragment fade-in-then-out">
+  <img src="images/pbc1.png" style="width:90%; text-align:center;">
+</div>
+
+<div style="position:absolute; top:12%; left:8%;" class="fragment fade-in-then-out">
+  <img src="images/pbc_last.png" style="width:90%; text-align:center;">
+</div>
+
 ## Notation
 
 -   $\require{color}\textcolor{#2E8B57}{T_1^*,\dots, T_n^*}$ true time until event
--   $\require{color}\textcolor{#2E8B57}{C_1,\dots, C_n}$ true time until event
+-   $\require{color}\textcolor{#2E8B57}{C_1,\dots, C_n}$ censoring times
 -   $\require{color}\textcolor{#2E8B57}{T_i=\min(T_i^*, C_i)}$ observed times, $i=1,\dotsc,n$
 -   $\require{color}\textcolor{#2E8B57}{\delta_i=\mathbf{1}\{T_i^*\leq C_i\}}$ censoring indicator, $i=1,\dotsc,n$
 -   Longitudinal data $\require{color}\textcolor{#D2691E}{\{\boldsymbol{y}_{li}; i=1,\dots,n, l=1,\dots,L\}}$
