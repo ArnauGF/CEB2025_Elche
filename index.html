@@ -684,7 +684,7 @@ h_i(t)= h_0(t)\exp \left[ \, \colorbox{#2E8B57}{$\color{white}\boldsymbol w_i^\t
 <div class="fragment fade-in-then-out" style="position:absolute; top:22%; left:7%;">
 <p><img src="images/sl6.png" style="width:120%; text-align:center;"></p>
 </div>
-<div class="fragment fade-in-then-out" style="position:absolute; top:10%; left:7%;">
+<div class="fragment fade-in-then-out" style="position:absolute; top:10%; left:9%;">
 <p><img src="images/sl7.png" style="width:78%; text-align:center;"></p>
 </div>
 <div class="fragment fade-in-then-out" style="position:absolute; top:15%; left:7%;">
@@ -699,9 +699,35 @@ h_i(t)= h_0(t)\exp \left[ \, \colorbox{#2E8B57}{$\color{white}\boldsymbol w_i^\t
 </section>
 <section id="simulation-study" class="slide level2">
 <h2>Simulation study</h2>
+<div class="fragment fade-in-then-out" style="position:absolute; top:12%; left:0%;">
+<ul>
+<li><span class="math inline">\(L=4\)</span> longitudinal outcomes considered</li>
+<li>Data-generating model: a <span style="color:#00BFFF;">multivariate joint model</span></li>
+<li>We consider the library <span class="math inline">\(\{M_1, M_2, M_3, M_4\}\)</span></li>
+<li><span style="color:#00BFFF;">Super learning</span> is applied with <span class="math inline">\(V=3\)</span></li>
+</ul>
+</div>
+<div class="fragment fade-in-then-out" style="position:absolute; top:12%; left:0%;">
+<ul>
+<li>Scenario I: <span style="color:#00BFFF;">Administrative censoring</span></li>
+<li>Scenario II: <span style="color:#00BFFF;">Random censoring</span></li>
+<li>Scenario III: <span style="color:#00BFFF;">Informative censoring</span></li>
+<li><span style="color:#00BFFF;">Integrated Brier score (IBS)</span> and <span style="color:#00BFFF;">expected cross-entropy</span> as scores</li>
+</ul>
+</div>
+<div class="fragment fade-in-then-out" style="position:absolute; top:12%; left:0%;">
+<p><span style="color:#00BFFF;">Results</span></p>
+<ul>
+<li>SL-based predictions closely match those of the data-generating (true) model</li>
+<li>SL accounts well for overfitting: Similar results between training and testing data</li>
+</ul>
+</div>
 </section>
-<section id="case-study" class="slide level2">
-<h2>Case study</h2>
+<section id="case-study-pbc-data" class="slide level2">
+<h2>Case study: PBC data</h2>
+<div class="fragment fade-in-then-out" style="position:absolute; top:12%; left:8%;">
+<p><img src="images/pbc1.png" style="width:90%; text-align:center;"></p>
+</div>
 </section>
 <section id="software" class="slide level2">
 <h2>Software</h2>
