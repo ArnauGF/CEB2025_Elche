@@ -410,7 +410,7 @@ $$
   <img src="images/sl6.png" style="width:120%; text-align:center;">
 </div>
 
-<div style="position:absolute; top:10%; left:7%;" class="fragment fade-in-then-out">
+<div style="position:absolute; top:10%; left:9%;" class="fragment fade-in-then-out">
   <img src="images/sl7.png" style="width:78%; text-align:center;">
 </div>
 
@@ -426,9 +426,38 @@ $$
   <img src="images/sl10b.png" style="width:72%; text-align:center;">
 </div>
 
-## Simulation study
+## Simulation study 
 
-## Case study
+<div style="position:absolute; top:12%; left:0%;" class="fragment fade-in-then-out">
+- $L=4$ longitudinal outcomes considered
+- Data-generating model: a [multivariate joint model]{style="color:#00BFFF;"}
+- We consider the library $\{M_1, M_2, M_3, M_4\}$
+- [Super learning]{style="color:#00BFFF;"} is applied with $V=3$
+</div>
+
+<div style="position:absolute; top:12%; left:0%;" class="fragment fade-in-then-out">
+- Scenario I: [Administrative censoring]{style="color:#00BFFF;"}
+- Scenario II: [Random censoring]{style="color:#00BFFF;"}
+- Scenario III: [Informative censoring]{style="color:#00BFFF;"}
+- [Integrated Brier score (IBS)]{style="color:#00BFFF;"} and [expected cross-entropy]{style="color:#00BFFF;"} as scores
+</div>
+
+<div style="position:absolute; top:12%; left:0%;" class="fragment fade-in-then-out">
+
+[Results]{style="color:#00BFFF;"}
+
+- SL-based predictions closely match those of the data-generating (true) model
+- SL accounts well for overfitting: Similar results between training and testing data
+
+</div>
+
+## Case study: PBC data
+
+<div style="position:absolute; top:12%; left:8%;" class="fragment fade-in-then-out">
+  <img src="images/pbc1.png" style="width:90%; text-align:center;">
+</div>
+
+
 
 ## Software
 
