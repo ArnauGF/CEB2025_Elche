@@ -9,27 +9,7 @@ format:
     menu: false
 ---
 
-## <!-- This creates a slide without a visible heading -->
-
-::: {style="text-align: center;"}
-[Optimizing dynamic predictions from joint models for multivariate longitudinal and time-to-event data via super learning approach]{style="font-size: 100%; font-weight: bold;"}
-
-<br>
-
-[CEB2026]{style="font-size: 100%; font-weight: bold;"}
-
-<br>
-
-[Arnau Garcia-Fernández, Guadalupe Gómez-Melis, Dimitris Rizopoulos]{style="font-size: 80%;"}
-
-<br>
-
-[September 17, 2025 --- Elche]{style="font-size: 50%;"}
-
-<br>
-
-<img src="images/Erasmus.png" style="height:70px; margin: 0 20px;"/> <img src="images/grbio.png" style="height:70px; margin: 0 20px;"/> <img src="images/upc.png" style="height:70px; margin: 0 20px;"/>
-:::
+## {.slide-background data-background-image="images/cover1_1080.png" data-background-size="cover"}
 
 ## Context and motivation
 
