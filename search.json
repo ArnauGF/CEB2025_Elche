@@ -95,7 +95,7 @@
     "href": "index.html#simulation-study",
     "title": "",
     "section": "Simulation study",
-    "text": "Simulation study\n\n\n\\(L=4\\) longitudinal outcomes considered\nData-generating model: a multivariate joint model\nWe consider the library \\(\\{M_1, M_2, M_3, M_4\\}\\)\nSuper learning is applied with \\(V=3\\)\n\n\n\n\nScenario I: Administrative censoring\nScenario II: Random censoring\nScenario III: Informative censoring\nIntegrated Brier score (IBS) and expected cross-entropy as scores\n\n\n\nResults\n\nSL-based predictions closely match those of the data-generating (true) model\nSL accounts well for overfitting: Similar results between training and testing data"
+    "text": "Simulation study\n\n\n\\(L=4\\) longitudinal outcomes considered\nData-generating model: a multivariate joint model\nWe consider the library \\(\\{M_1, M_2, M_3, M_4\\}\\)\nSuper learning is applied with \\(V=3\\)\nGoal: compare SL-based predictions with true model predictions\n\n\n\n\nScenario I: Administrative censoring\nScenario II: Random censoring\nScenario III: Informative censoring\nIntegrated Brier score (IBS) and expected cross-entropy as scores\n\n\n\nResults\n\nSL-based predictions closely match those of the data-generating (true) model\nSL accounts well for overfitting: Similar results between training and testing data"
   },
   {
     "objectID": "index.html#case-study-pbc-data",
