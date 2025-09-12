@@ -413,6 +413,7 @@ $$
 - Data-generating model: a [multivariate joint model]{style="color:#00BFFF;"}
 - We consider the library $\{M_1, M_2, M_3, M_4\}$
 - [Super learning]{style="color:#00BFFF;"} is applied with $V=3$
+- [Goal:]{style="color:#00BFFF;"} compare SL-based predictions with true model predictions
 </div>
 
 <div style="position:absolute; top:12%; left:0%;" class="fragment fade-in-then-out">
