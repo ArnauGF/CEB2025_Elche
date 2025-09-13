@@ -302,7 +302,7 @@ $$
 $$
 
 <div class="fragment fade-in">
-  - Cumulative risk probabilities 
+  - [Cumulative risk probabilities]{style="color:#00BFFF;"}
   
   $$
   \normalsize\require{color}
@@ -311,11 +311,11 @@ $$
 </div>
 
 <div style="position:absolute; top:82%; left:0%;" class="fragment fade-in-then-out">
-  - Estimation based on posterior predictive distributions
+  - Estimation based on [posterior predictive distributions]{style="color:#00BFFF;"}
 </div>
 
 <div style="position:absolute; top:82%; left:0%;" class="fragment fade-in-then-out">
-  - Monte Carlo scheme used in practice
+  - [Monte Carlo scheme]{style="color:#00BFFF;"} used in practice
 </div>
 
 ## Super learning
@@ -390,7 +390,7 @@ $$
   <img src="images/sl6.png" style="width:120%; text-align:center;">
 </div>
 
-<div style="position:absolute; top:10%; left:9%;" class="fragment fade-in-then-out">
+<div style="position:absolute; top:10%; left:11%;" class="fragment fade-in-then-out">
   <img src="images/sl7.png" style="width:78%; text-align:center;">
 </div>
 
@@ -402,7 +402,7 @@ $$
   <img src="images/sl9.png" style="width:95%; text-align:center;">
 </div>
 
-<div style="position:absolute; top:10%; left:7%;" class="fragment fade-in-then-out">
+<div style="position:absolute; top:10%; left:9%;" class="fragment fade-in-then-out">
   <img src="images/sl10b.png" style="width:72%; text-align:center;">
 </div>
 
@@ -427,8 +427,8 @@ $$
 
 [Results]{style="color:#00BFFF;"}
 
-- SL-based predictions closely match those of the data-generating (true) model
-- SL accounts well for overfitting: Similar results between training and testing data
+- SL-based predictions [closely approximate]{style="color:#00BFFF;"} the true model
+- SL accounts well for [overfitting]{style="color:#00BFFF;"}: similar results between training and testing data
 
 </div>
 
@@ -438,33 +438,87 @@ $$
   <img src="images/pbc1.png" style="width:90%; text-align:center;">
 </div>
 
+<div style="position:absolute; top:13%; left:0%;" class="fragment fade-in-then-out">
+$$ \scriptsize\begin{cases}
+         \log(\texttt{serBilir}(t_{ij})) & = \colorbox{#D2691E}{$\color{white}m_{1i}(t_{ij})$} + \varepsilon_{1i}(t_{ij}) \\
+        &=  (\beta_0^1 + b_{0i}^1) + (\beta_{1}^1 + b_{1i}^1)t_{ij} + \beta_2^1\texttt{drug}_i +  \varepsilon_{1i}(t_{ij}),\\
+         \texttt{albumin}(t_{ij}) & = \colorbox{#D2691E}{$\color{white}m_{2i}(t_{ij})$} + \varepsilon_{2i}(t_{ij}) \\
+         & = (\beta_0^2 + b_{0i}^2) + (\beta_1^2 + b_{1i}^2)t_{ij} + \beta_2^2\texttt{sex}_i + \varepsilon_{2i}(t_{ij}),\\
+          \texttt{alkaline}(t_{ij}) & = \colorbox{#D2691E}{$\color{white}m_{3i}(t_{ij})$} + \varepsilon_{3i}(t_{ij}) \\
+        & =(\beta_0^3 + b_{0i}^3) + (\beta_{1}^3 + b_{1i}^3)t_{ij} + \varepsilon_{3i}(t_{ij}),\\
+        \log\left( \frac{p(\texttt{ascites}(t_{ij})=1)}{1-p(\texttt{ascites}(t_{ij})=1)} \right) & = \colorbox{#D2691E}{$\color{white}m_{4i}(t_{ij})$} + \varepsilon_{4i}(t_{ij})\\
+        & = (\beta_0^4 + b_{0i}^4) + \beta_1^4t_{ij} + \varepsilon_{4i}(t_{ij}).
+    \end{cases}$$
+</div>
+
+<div style="position:absolute; top:14%; left:0%;" class="fragment fade-in-then-out">
+- We fit a [multivariate JM]{style="color:#00BFFF;"}, and we apply [SL]{style="color:#00BFFF;"} to the library of [univariate JMs]{style="color:#00BFFF;"} $\{M_1, M_2, M_3, M_4\}$
+
+$$\scriptsize\begin{split} h_{i}\left(t \mid \colorbox{#D2691E}{$\color{white}\boldsymbol{\mathcal{Y}}_{i}(t)$}, \colorbox{#2E8B57}{$\color{white}\boldsymbol{w}_{i}$}\right) =h_{0}(t) \exp \big( & \colorbox{#2E8B57}{$\color{white}\gamma\texttt{drug}_i$}+ \alpha_1\colorbox{#D2691E}{$\color{white}m_{1i}(t_{ij})$} + \alpha_2\colorbox{#D2691E}{$\color{white}m_{2i}(t_{ij})$} \\
+& \alpha_3\colorbox{#D2691E}{$\color{white}m_{3i}(t_{ij})$} + \alpha_4\colorbox{#D2691E}{$\color{white}m_{4i}(t_{ij})$}\big) 
+\end{split}$$
+</div>
+
+<div style="position:absolute; top:14%; left:0%;" class="fragment fade-in-then-out">
+- We fit a [multivariate JM]{style="color:#00BFFF;"}, and we apply [SL]{style="color:#00BFFF;"} to the library of [univariate JMs]{style="color:#00BFFF;"} $\{M_1, M_2, M_3, M_4\}$ 
+
+$$\scriptsize\begin{cases} 
+M1: & h_{i}\left(t \mid \colorbox{#D2691E}{$\color{white}\boldsymbol{\mathcal{Y}}_{i}(t)$}, \colorbox{#2E8B57}{$\color{white}\boldsymbol{w}_{i}$}\right) =h_{0}(t) \exp \big(  \colorbox{#2E8B57}{$\color{white}\gamma\texttt{drug}_i$}+ \alpha_1\colorbox{#D2691E}{$\color{white}m_{1i}(t_{ij})$} \big) \\
+M2: & h_{i}\left(t \mid \colorbox{#D2691E}{$\color{white}\boldsymbol{\mathcal{Y}}_{i}(t)$}, \colorbox{#2E8B57}{$\color{white}\boldsymbol{w}_{i}$}\right) =h_{0}(t) \exp \big(  \colorbox{#2E8B57}{$\color{white}\gamma\texttt{drug}_i$}+ \alpha_2\colorbox{#D2691E}{$\color{white}m_{2i}(t_{ij})$} \big) \\
+M3: & h_{i}\left(t \mid \colorbox{#D2691E}{$\color{white}\boldsymbol{\mathcal{Y}}_{i}(t)$}, \colorbox{#2E8B57}{$\color{white}\boldsymbol{w}_{i}$}\right) =h_{0}(t) \exp \big(  \colorbox{#2E8B57}{$\color{white}\gamma\texttt{drug}_i$}+ \alpha_3\colorbox{#D2691E}{$\color{white}m_{3i}(t_{ij})$} \big) \\
+M4: & h_{i}\left(t \mid \colorbox{#D2691E}{$\color{white}\boldsymbol{\mathcal{Y}}_{i}(t)$}, \colorbox{#2E8B57}{$\color{white}\boldsymbol{w}_{i}$}\right) =h_{0}(t) \exp \big(  \colorbox{#2E8B57}{$\color{white}\gamma\texttt{drug}_i$}+ \alpha_4\colorbox{#D2691E}{$\color{white}m_{4i}(t_{ij})$} \big) 
+\end{cases}$$
+</div>
+
+<div style="position:absolute; top:14%; left:0%;" class="fragment fade-in-then-out">
+- [Results]{style="color:#00BFFF;"}:
+
+  <img src="images/table.png" style="width:95%; text-align:center;">
+
+</div>
+
+<div style="position:absolute; top:14%; left:0%;" class="fragment fade-in-then-out">
+- [Results]{style="color:#00BFFF;"}:
+
+  <img src="images/table2.png" style="width:95%; text-align:center;">
+
+</div>
+
+<div style="position:absolute; top:14%; left:0%;" class="fragment fade-in-then-out">
+- [Results]{style="color:#00BFFF;"}:
+
+  <img src="images/table3.png" style="width:95%; text-align:center;">
+
+</div>
 
 
 ## Software
+
+- Package available in [CRAN]{style="color:#00BFFF;"}
+- [Vignette on super learning]{style="color:#00BFFF;"} available in [JMBbayes2 Website](https://drizopoulos.github.io/JMbayes2/articles/Super_Learning.html)
+
+<div style="position:absolute; top:40%; left:20%;" class="fragment fade-in">
+  <img src="images/JMBayes2-logo-no-background.gif" style="width:40%; text-align:center;">
+</div>
+
+<div style="position:absolute; top:45%; left:60%;" class="fragment fade-in">
+  <img src="images/qr_vignette.png" style="width:63%; text-align:center;">
+</div>
 
 ## Discussion
 
 ## Acknowledgements
 
+- [Grant PID2023-148033OB-C21]{style="color:#00BFFF;"}: Statistics for Health Sciences: Advances in Survival Analysis and Clinical Trials. Financiado por MICIU/AEI /10.13039/501100011033 y por FEDER, UE.
+- [Grant 2021 SGR 01421: GRBIO]{style="color:#00BFFF;"}: Grup de Recerca en Bioestadística i Bioinformàtica. Agència de Gestió d’Ajuts Universitaris i de Recerca.
+- Projecte [Iniciació a la Recerca (INIREC)]{style="color:#00BFFF;"}, convocatòria 5601.
 
-## Formulas
+<div style="position:absolute; top:80%; left:32%;" class="fragment fade-in">
+  <img src="images/LogoPID2023.jpg" style="width:63%; text-align:center;">
+</div>
 
-Nice formulas with colors and backgrounds:
 
-$$\require{color}
-{\scriptsize{
-\begin{cases}
-\text{MELD}_i(t)&= \colorbox{#03858C}{$\color{#F5ECCF}\boldsymbol x_{1i}^\top(t)\boldsymbol\beta_1 + \boldsymbol z_{1i}^\top(t)\boldsymbol b_{1i}$} + \varepsilon_1(t) \\
-\text{TBS}_i(t)&= \colorbox{#03858C}{$\color{#F5ECCF}\boldsymbol x_{2i}^\top(t)\boldsymbol\beta_2 + \boldsymbol z_{2i}^\top(t)\boldsymbol b_{2i}$} + \varepsilon_2(t) \\
-\text{AFP}_i(t)&= \colorbox{#03858C}{$\color{#F5ECCF}\boldsymbol x_{3i}^\top(t)\boldsymbol\beta_3 + \boldsymbol z_{3i}^\top(t)\boldsymbol b_{3i}$} + \varepsilon_3(t) \\
-\log h_i(t) &= \log h_0(t) + w_{Ri}^\top(t)\boldsymbol\gamma_R\, + \color{transparent} \boxed{\color{#03858C}\mathbf{1}\{t>T_i\}\left(\gamma_\text{T}+w_{Di}^\top(t)\boldsymbol\gamma_D\right)} \,\color{#03858C}+ \\
-\color{transparent}\log h_i(t) &\color{#03858C}+\, \color{#03858C}\boxed{\color{#03858C}\tfrac{\delta}{\delta t^\ast}\colorbox{#03858C}{$\color{#F5ECCF}\eta_{1i}(t^\ast)$}\,}\color{#03858C}\alpha_{1,1} + \color{#03858C}\boxed{\color{#03858C}\tfrac{\delta}{\delta t^\ast}\colorbox{#03858C}{$\color{#F5ECCF}\eta_{2i}(t^\ast)$}\,}\color{#03858C}\alpha_{2,1} + \color{#03858C}\boxed{\color{#03858C}\tfrac{\delta}{\delta t^\ast}\colorbox{#03858C}{$\color{#F5ECCF}\eta_{3i}(t^\ast)$}\,}\color{#03858C}\alpha_{3,1} + \\
-\color{transparent}\log h_i(t) &\color{#03858C}+\, \color{transparent}\boxed{\color{#03858C}\tfrac{1}{t^\ast}{\textstyle\int\,}\colorbox{#03858C}{$\color{#F5ECCF}\eta_{1i}(t^\ast)$}ds}\color{#03858C}\,\alpha_{1,2} + \color{transparent}\boxed{\color{#03858C}\tfrac{1}{t^\ast}{\textstyle\int\,}\colorbox{#03858C}{$\color{#F5ECCF}\eta_{2i}(t^\ast)$}\mbox{d}s}\color{#03858C}\,\alpha_{2,2} + \color{transparent}\boxed{\color{#03858C}\tfrac{1}{t^\ast}{\textstyle\int\,}\colorbox{#03858C}{$\color{#F5ECCF}\eta_{3i}(t^\ast)$}\mbox{d}s}\color{#03858C}\,\alpha_{3,2}
-\end{cases}\\
-}}$$
 
-## Images
 
-Let us display a nice animated figure:
 
-![](images/JMBayes2-logo-no-background.gif){width="30%"}
+
